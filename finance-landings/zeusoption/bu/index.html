@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>financeyards1redakt</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+        <style type="text/css">
+        	body,
+        	html,
+        	ul,
+        	p,
+        	h1,
+        	h2,
+        	h3,
+        	h4{
+        	    margin: 0;
+        	    padding: 0;
+        	}
+
+        	body,html {
+        	    font-family: 'Dosis', sans-serif;
+        	    font-weight: 400;
+        	    font-size: 16px;
+        	    min-width: 320px;
+        	    position: relative;
+        	}
+
+
+        	ul {
+        	    list-style: none
+        	}
+
+        	main{
+        	    font-size: 1.5rem;
+        	}
+
+
+        	.uppercase{
+        	    text-transform: uppercase;
+        	}
+
+        	.clearfix:after {
+        	    content: "";
+        	    display: table;
+        	    clear: both
+        	}
+
+        	.pull-left {
+        	    float: left
+        	}
+
+        	.pull-right {
+        	    float: right
+        	}
+
+        	.text-right {
+        	    text-align: right
+        	}
+
+        	.text-left {
+        	    text-align: left
+        	}
+
+        	.text-center {
+        	    text-align: center
+        	}
+
+        	.container{
+        	    max-width: 1200px;
+        	/*    max-width: 720px;*/
+        	    margin: auto;
+        	}
+
+        	.col{
+        	    padding-left: 20px;
+        	    padding-right: 20px;
+        	}
+
+
+        	.col-lil{
+        	    padding-left: 10px;
+        	    padding-right: 10px;
+        	}
+
+        	.col,
+        	.col-lil{
+        	    box-sizing: border-box;
+        	}
+
+        	.col-66{
+        	    width: 66.6%;
+        	}
+
+        	.col-50{
+        	    width: 50%;
+        	}
+
+        	.col-33{
+        	    width: 33%;
+        	}
+
+
+        	.col-25{
+        	    width: 25%;
+        	}
+
+
+        	header{
+        		height: 84px;
+        		background: rgba(0,14,51,0.65);
+        	}
+
+        	.get-bonus{
+        		background: url('source/bg.jpg');
+        	}
+
+
+        	form{
+        	    color:#fff;
+        	    padding: 10px 20px;
+        	    background: rgba(0,14,51,0.65);
+        	}
+
+        	.icons-small{
+        	    position: relative;
+        	    display: block;
+        	}
+
+
+        	.icons-small:after{
+        	    content: '';
+        	    opacity: 0.25;
+        	    position: absolute;
+        	    width: 26px;
+        	    height: 26px;
+        	    left: 10px;
+        	    top: 0;
+        	    bottom: 0;
+        	    margin: auto;
+        	    background-size: 300%;
+        	    background: url('source/icons-small.png');
+        	    background-repeat: no-repeat;
+        	}
+
+        	.icons-small-name:after{
+        	    background-position: 0% 50%;
+        	}
+        	.icons-small-email:after{
+        	    background-position: 0% 0%;
+        	}
+        	.icons-small-country:after{
+        	    background-position: 0% 100%;
+        	}
+
+
+        	label>input,
+        	button{
+        	    width: 100%;
+        	    display: block;
+        	    box-sizing: border-box;
+        	    font-size: 1.125rem;
+        	    background-color: #e9e9e9;
+        	    color: #555a5d;
+        	    margin: 10px 0px;
+        	    padding: 10px 5px;
+        	}
+
+        	.icons-small>input{
+        	    padding-left: 40px;
+        	}
+
+
+        	.btn-blue{
+        	    width: 100%;
+        	    font-size: 1.5rem;
+        	    color: #fff;
+        	    font-weight: 100;
+        	    text-transform: uppercase;
+        	    background-image: linear-gradient(to bottom, #06d3ff 0%, #008bc8 100%);
+        	    border: 1px solid #004d91;
+        	    box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.25);
+        	    outline: 1px solid rgba(255,255,255,0.5);
+        	    transition: all 0.5s ease-in-out;
+        	} 
+
+
+        	.btn-blue:hover{
+        	    box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.5);
+        	}
+
+        	.btn-blue:active{
+        	    box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.75);
+        	}
+
+
+        	.acceptTerms-text{
+        	    width: 90%;
+        	    padding: 10px 0;
+        	    line-height: 1.25rem;
+        	}
+
+        	.advantages{
+        		position: relative;
+        	}
+
+        	.advantages:after,
+        	.advantages:before{
+        	    content: ' ';
+        	    display: block;
+        	    height: 26px;
+        	    width: 100%;
+        	    background-image: url('source/advantages-decor-sprite.jpg') ;
+        	    background-repeat: repeat-x;
+        	}
+
+        	.advantages:before{
+        	    top: 0;
+        	    background-position: 0 0;
+        	}
+
+        	.advantages:after{
+        	    bottom: 0;
+        	    background-position: 0 -26px;
+        	}
+
+
+        	.advantages-icon{
+        		position: relative;
+        	    height: 66px;
+        	    margin: 10px auto;
+        	    background-image: url('source/advantages-icons-sprite.jpg') ;
+        	    background-repeat: no-repeat;
+        	}
+
+        	.icon-save{
+        		width: 58px;
+        	    background-position: 0%;
+        	}
+
+
+        	.icon-personal{
+        		width: 52px;
+        	    background-position: -58px;
+        	}
+
+        	.icon-fast{
+        		width: 51px;
+        	    background-position: -110px;
+        	}
+
+        	.icon-insurance{
+        		width: 39px;
+        	    background-position: -161px;
+        	}
+
+        	.advantages-icon:after,
+        	.advantages-icon:before{
+        	    content: ' ';
+        	    position: absolute;
+        	    height: 86px;
+        	    width: 36px;
+        	    top: 0;
+        	    bottom: 0;
+        	    margin: auto;
+        	    background-image: url('source/advantages-decor-sprite.jpg') ;
+        	    background-size: 100%;
+        	    background-repeat: no-repeat;
+        	    background-position: 0 -52px;
+        	}
+
+        	.advantages-icon:before{
+        		right: 100%;
+        	}
+
+        	.advantages-icon:after{
+        		left: 100%;
+        		transform: scaleX(-1);
+        	}
+
+        	.logo-big{
+        	    overflow: hidden;
+        	    width: 786px;
+        	    max-width: 100%;
+        	    height: 55px;
+        	    margin: 0 auto;
+        	    padding: 10px 0;
+        	    opacity: 0.35;
+        	    background: url('source/logos-big.png') 50% 50% no-repeat;
+        	    background-size: 100%;
+        	}
+
+        	footer {
+        	    background-color: #000a25;
+        	}
+
+        	.logo-small{
+        	    background: url('source/logos-small.png') 50% 50% no-repeat;
+        	    height: 25px;
+        	    width: 278px;
+        	    max-width: 100%;
+        	    margin: 0 auto;
+        	    background-size: 100%;
+        	}
+
+
+        	@media only screen and (max-width : 768px) {
+
+
+        	    body,html {
+        	        font-size: 14px;
+        	    }
+
+
+        	    .learn-trading-col{
+        	        min-width: 320px;
+        	    }
+
+        	    .learn-form{
+        	        padding-top: 50px;
+        	        padding-bottom: 50px;
+        	    }
+
+        	    .logo{
+        	        top: 10px;
+        	        left: 0;
+        	        display: block;
+        	    }
+
+        	    .col-66{
+        	        width: 100%;
+        	    }
+
+        	    .col-50{
+        	        width: 100%;
+        	    }
+
+        	    .col-25{
+        	        width: 50%;
+        	    }
+
+        	}
+        </style>
+    </head>
+    <body>
+		<main>
+			<header>
+				<div class="clearfix container">
+					<div class="col-33 pull-right">					
+						<img src="./source/logo.jpg" class="logo">
+					</div>
+				</div>
+			</header>
+			<section class="get-bonus">
+				<div class="clearfix container">
+					<div class="pull-left col col-66">
+						<h2>Получи Бонус До 200%</h2>
+						<p>	Бонус – это распространенный метод поощрения как новых, так и существующих клиентов. Начисление бонусных средств позволяет существенно увеличить торговый капитал, поднимая тем самым объемы инвестируемых средств и соответственно общую доходность торговли. </p>
+						<p class="">Проще говоря, денег на вашем счету будет больше, что даст вам возможность получать более высокую прибыль. Зачастую размер бонуса напрямую зависит от размеров первого депозита.</p>
+					</div>
+					<div class="pull-right col-33 text-right bonus-form">
+						<form>
+							<h3 class="text-center uppercase">бесплатная регистрация</h3>
+							<label class="icons-small icons-small-name" for="name"><input type="text" placeholder="Имя" id="name" ></label>
+							<label class="icons-small icons-small-email" for="email"><input type="email" placeholder="E-mail" id="email"></label>
+							<label class="phone-label"><input type="phone" placeholder="+380"></label>
+							<label class="icons-small icons-small-country" for="country"><input type="text" placeholder="Ukraine" id="country"></label>
+							<button type="submit" class="btn btn-blue uppercase"> contact expert advisers</button>
+							<div class="logo-small"></div>
+							<label for="acceptTerms" >
+								<div class="clearfix">
+									<div class="pull-left"><input type="checkbox" id="acceptTerms"></div>
+									<div class="pull-left small-text text-center acceptTerms-text">I am over 18 years of age and I accept the Terms & conditions, Privacy Policy Privacy Policy</div>
+								</div>
+							</label>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="advantages">
+				<div class="container text-center">
+					<h4 class="uppercase">Преимущества работы с нами</h4>
+					<div class="clearfix tools-cols">
+						<div class="pull-left col-25">
+							<div class="advantages-icon icon-save"></div>
+							Защищенные инвестиции 
+						</div>
+						<div class="pull-left col-25">
+							<div class="advantages-icon icon-personal"></div>
+							Индивидуальное обучение 		
+						</div>
+						<div class="pull-left col-25">
+							<div class="advantages-icon icon-fast"></div>
+							Быстрый вывод средств	
+						</div>
+						<div class="pull-left col-25">
+							<div class="advantages-icon icon-insurance"></div>
+							Страховка сделок
+						</div>
+					</div>
+				</div>
+				
+				
+
+			</section>
+	        <footer>
+	        	<div class="container">
+	        		<div class="col text-center">        			
+	        			<div class="logo-big"></div>
+						<p class="small-text">							
+						Уведомление о рисках: Торговля бинарными опционами предполагает существенный риск. Мы настоятельно рекомендуем вам ознакомиться с нашими Terms & Conditions. Хотя риск при торговле бинарными опционами фиксируется для каждой отдельной сделке, но все же можно потерять первоначальные инвестиции, особенно, если трейдер хочет поместить весь свой капитал в единую сделку. Настоятельно рекомендуем, выбирать правильную стратегию управления капиталом, которая ограничивает общее количество сделок или общую сумму инвестиций.
+
+						</p>
+	        		</div>
+	        	</div>
+	        </footer>
+		</main>
+    	</div>
+    </body>
+</html>
