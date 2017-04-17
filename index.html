@@ -28,100 +28,140 @@
 
     <style type="text/css">
     	section{
-    		padding-top: 200px;
-   		    padding-bottom: 100px;
+    		padding-top: 20px;
+   		    padding-bottom: 10px;
     	}
-    	.btn-social{
+
+    	.portfolio-link{
+    		color: #000;
+    		text-decoration: none;
     		display: inline-block;
-    		height: 50px;
-    		width: 50px;
-    		border: 2px solid #fff;
-    		border-radius: 100%;
-    		text-align: center;
-    		font-size: 20px;
-    		line-height: 45px;
     	}
+
+    	.panel-icon{
+    		font-size: 10rem;
+    	}
+
     </style>
 
 </head>
 
-<body class="text-center">
-	<section class="about text-center">
-		<h2>Hello there! This is my portfolio</h2>
-		<p>Look what can i do and let's work together!</p>
-	</section>
-	<section class="works">
-	    <div class="container">
+<body>
+	<div class="container">
+		<section class="about">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+	    			<h2>Hello. This is my portfolio.</h2>
+		    		<h3>Let's work together.</h3>
+		    	</div>
+	    	</div>
+		</section>
+		<section class="works">
 	        <div class="row">
-	            <div class="col-lg-12 text-center">
+	            <div class="col-lg-4">
 	                <h2>Works</h2>
-	                <hr class="star-primary">
+	            </div>
+	            <div class="col-lg-8">
+	                <a href="#portfolioModal1" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+	                		<i class="fa panel-icon fa-building-o" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">27pearls</div>
+	                </a>
+	                <a href="#portfolioModal2" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+		                	<i class="fa panel-icon fa-paint-brush" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">air</div>
+	                </a>
+	                <a href="#portfolioModal3" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+		                	<i class="fa panel-icon fa-car" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">car-graphic</div>
+	                </a>
+	                <a href="#portfolioModal4" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+		                	<i class="fa panel-icon fa-female" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">escort</div>
+	                </a>
+	                <a href="#portfolioModal5" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+		                	<i class="fa panel-icon fa-circle-thin" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">owell</div>
+	                </a>
+	                <a href="#portfolioModal6" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+		                	<i class="fa panel-icon fa-eur" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">finance</div>
+	                </a>	                
 	            </div>
 	        </div>
+		</section>
+		<section class="projects">
 	        <div class="row">
-	            <div class="col-sm-4">
-	                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">27pearls</a>
-	            </div>
-	            <div class="col-sm-4">
-	                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">air</a>
-	            </div>
-	            <div class="col-sm-4">
-	                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">car-graphics</a>
-	            </div>
-	            <div class="col-sm-4">
-	                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">escort</a>
-	            </div>
-	            <div class="col-sm-4">
-	                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">owell</a>
-	            </div>
-	            <div class="col-sm-4">
-	                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">finance</a>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	<section class="projects">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-lg-12 text-center">
+	            <div class="col-lg-4">
 	                <h2>Projects</h2>
-	                <hr class="star-primary">
+	            </div>
+	            <div class="col-lg-8">
+	                <a href="#portfolioModal7" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+	                		<i class="fa panel-icon fa-picture-o" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">image-editor</div>
+	                </a>
+	                <a href="#portfolioModal8" class="portfolio-link panel panel-default" data-toggle="modal">
+	                	<div class="panel-body">
+	                		<i class="fa panel-icon fa-file-image-o" aria-hidden="true"></i>
+	                	</div>
+	                	<div class="panel-footer">web gallery</div>
+	                </a>
 	            </div>
 	        </div>
-	        <div class="row">
-	            <div class="col-sm-6">
-	                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">portfolio-link 1 </a>
-	            </div>
-	            <div class="col-sm-6">
-	                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">portfolio-link 1 </a>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	<section class="about">
-		<div class="row">
-			<div class="col-md-12">
-	            <h3>Around the Web</h3>
-	            <ul class="list-inline">
-	                <li>
-	                    <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-	                </li>
-	                <li>
-	                    <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-	                </li>
-	                <li>
-	                    <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-	                </li>
-	                <li>
-	                    <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-	                </li>
-	                <li>
-	                    <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
-	                </li>
-	            </ul>
-	        </div>
-	    </div>
-	</section>
+		</section>
+		<section class="about">
+		    <div class="row">
+		        <div class="col-lg-4">
+		            <h2>Around the Web</h2>
+		        </div>
+		        <div class="col-lg-8">
+		            <a href="" class="portfolio-link panel panel-default">
+		            	<div class="panel-body">
+		            		<i class="fa panel-icon fa-facebook" aria-hidden="true"></i>
+		            	</div>
+		            	<div class="panel-footer">facebook</div>
+		            </a>
+		            <a href="" class="portfolio-link panel panel-default">
+		            	<div class="panel-body">
+		            		<i class="fa panel-icon fa-google" aria-hidden="true"></i>
+		            	</div>
+		            	<div class="panel-footer">google</div>
+		            </a>
+		            <a href="" class="portfolio-link panel panel-default">
+		            	<div class="panel-body">
+		            		<i class="fa panel-icon fa-twitter" aria-hidden="true"></i>
+		            	</div>
+		            	<div class="panel-footer">twitter</div>
+		            </a>
+		            <a href="" class="portfolio-link panel panel-default">
+		            	<div class="panel-body">
+		            		<i class="fa panel-icon fa-linkedin" aria-hidden="true"></i>
+		            	</div>
+		            	<div class="panel-footer">linkedin</div>
+		            </a>
+		    	</div>
+		    </div>
+		</section>
+    </div>
+
+
+
+
+
+
 	<section class="modals">
 		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
 		    <div class="modal-dialog">
@@ -171,7 +211,7 @@
 			      <h4 class="modal-title">car-graphics</h4>
 			    </div>
 			    <div class="modal-body">
-			      <a href="./car-graphics">car-graphics</a>
+			      <a href="./car-graphic">car-graphics</a>
 			    </div>
 			    <div class="modal-footer">
 			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -229,6 +269,46 @@
 			    </div>
 			    <div class="modal-body">
 			      <a href="./finance">finance</a>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			    </div>
+			  </div>
+			  
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			      <h4 class="modal-title">web-gallery</h4>
+			    </div>
+			    <div class="modal-body">
+			      <a href="./image-editor">image-editor</a>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			    </div>
+			  </div>
+			  
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			      <h4 class="modal-title">web-gallery</h4>
+			    </div>
+			    <div class="modal-body">
+				    <a href="./web-gallery/eye.html">eye</a>
+				    <a href="./web-gallery/mandala.html">mandala</a>
+				    <a href="./web-gallery/sportsmen.html">sportsmen</a>
 			    </div>
 			    <div class="modal-footer">
 			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
