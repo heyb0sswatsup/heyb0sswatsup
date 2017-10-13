@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Greeting App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link href="./app.css" rel="stylesheet"></head>
+  <style type="text/css">
+    body{
+    	background-color: #eee;
+    }
+    .theme-container{
+    transition: all 0.4s ease-out;
+    }
+    .mdc-theme--dark {
+    	background: #262626;
+    	color: white;
+    }
+    .mdc-theme--light {
+    	background: transparent;
+    	color: #262626;
+    }
+    .panel {
+    display: none;
+    }
+    .mdc-card{
+    	background: white;
+    }
+    .mdc-card>img{
+    width: 100%;
+    height: auto;
+    }
+    .panel.active {
+    display: block;
+    }
+  </style>
+  <body>
+    <div class="theme-container mdc-theme--light"></div>
+  <script type="text/javascript" src="app.js" async></script></body>
+  <div><img class="b-lazy" data-src="http://placehold.it/500x250/000000&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/111111&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/222222&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/333333&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/4444444&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/555555&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/666666&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/777777&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/888888&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"><img class="b-lazy" data-src="http://placehold.it/500x250/ffffff&amp;text=loaded%20image" src="http://placehold.it/500x250&amp;text=placeholder"></div>
+  <script src="https://rawgithub.com/dinbror/blazy/master/blazy.min.js"></script>
+  <script>
+    // the code
+    var bLazy = new Blazy({
+      success: function(){
+        updateCounter();
+      }
+    });
+    
+    
+    // not needed, only here to illustrate amount of loaded images
+    var imageLoaded = 0;
+    var eleCountLoadedImages = document.getElementById('loaded-images');
+    
+    function updateCounter() {
+      imageLoaded++;
+      eleCountLoadedImages.innerHTML = imageLoaded;
+    }
+  </script>
+</html>
